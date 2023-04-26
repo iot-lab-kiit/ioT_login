@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700;900&family=Open+Sans:wght@600&family=Oswald:wght@500&display=swap");
+
+.body {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: repeat;
+  background-image: url("/images/bg-ele.png");
+  height: 100vh;
+  width: 100vw;
+}
+
+.body1 {
+  padding: 0px;
+  margin: 0px;
+  background-size: cover;
+  overflow-x: hidden;
+  background-repeat: repeat;
+  background-image: url("/images/bg-ele1.png");
+  height: 100vh;
+  width: 100vw;
+}
+
+.all2 {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  display: flex;
+  box-sizing: content-box;
+}
+.all {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  height: 90vh;
+  box-sizing: content-box;
+}
+
+.title {
+  position: relative;
+  top: 27%;
+  font-size: 160px;
+  font-weight: 700;
+  font-family: "Kanit", sans-serif;
+  width: fit-content;
+  height: fit-content;
+  padding: 0%;
+  margin: 0%;
+  color: rgba(31, 41, 55, 1);
+}
+
+.title2 {
+  position: relative;
+  top: 40px;
+  font-size: 160px;
+  font-weight: 700;
+  font-family: "Kanit", sans-serif;
+  width: fit-content;
+  height: 300px;
+  padding: 0%;
+  color: rgba(31, 41, 55, 1);
+  animation: slideIn;
+  animation-duration: 1s;
+}
+
+.sub {
+  font-size: 30px;
+  font-family: "Kanit", sans-serif;
+  padding: 0%;
+  margin: 0%;
+  position: relative;
+  bottom: 50px;
+}
+
+.title:hover {
+  cursor: pointer;
+  animation: slideOut 1s ease-out;
+}
+
+.color {
+  background-color: rgba(0, 255, 133, 1);
+  font-family: "Oswald", sans-serif;
+  padding-right: 8px;
+  padding-top: 0px;
+  font-size: 17px;
+}
+
+.green {
+  background-color: transparent;
+  color: rgba(0, 255, 133, 1);
+  font-family: "Kanit", sans-serif;
+  position: relative;
+  top: 4px;
+  right: 9px;
+  font-size: 35px;
+  font-weight: 900;
+  animation: slideInR;
+  animation-duration: 4s;
+}
+
+.name {
+  display: flex;
+
+  box-sizing: content-box;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 14%;
+  left: 13%;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline {
+  font-size: 20px;
+  position: relative;
+  bottom: 22%;
+  left: 11px;
+}
+
+.item1,
+.item2,
+.item3 {
+  width: 200px;
+  height: 100px;
+  margin: 80px, 80px;
+  padding-top: 10%;
+}
+
+.item1 {
+  position: relative;
+  left: 200px;
+}
+
+.item2 {
+  position: relative;
+  left: 220px;
+}
+
+.item3 {
+  position: relative;
+  left: 200px;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInR {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+
+  75% {
+    transform: translateX(250px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInT {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInRR {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(30px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRI {
+  0% {
+    transform: translateX(30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .name {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: nowrap;
+    left: 5%;
+  }
+
+  .tagline {
+    top: 1%;
+  }
+
+  .title2 {
+    font-size: 7rem;
+    justify-content: center;
+    box-sizing: content-box;
+    padding-bottom: 6rem;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    left: 0px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .items {
+    margin-top: 40%;
+  }
+}
+
+.i1:not(:hover) {
+  opacity: 1;
+}
+
+.i1:hover {
+  transform: scale(1.25);
+}
+
+.img1:hover::after {
+  content: "Projects";
+  color: rgba(31, 41, 55, 1);
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  animation: slideInRR;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.img1,
+.img2,
+.img3 {
+  display: flex;
+}
+
+.img2:hover::after {
+  content: "Newsletter";
+  color: rgba(31, 41, 55, 1);
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  animation: slideInRR;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.img3:hover::after {
+  content: "Register";
+  color: rgba(31, 41, 55, 1);
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  animation: slideInRR;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
